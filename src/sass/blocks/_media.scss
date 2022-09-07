@@ -1,0 +1,132 @@
+@media (max-width: 1439px) {
+    
+}
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    } 
+    .advantages{
+        &__item{
+            max-width: 220px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    .header{
+        &__phone{
+            font-size: 15px;
+        }
+        &__logo{
+            width: 200px;
+        }
+        &__official{
+            width: 150px;
+            span{
+                font-size: 13px;
+                margin-top: 0;
+            }
+        }
+    }
+    .button{
+        width: 130px;
+        &_main{
+            width: 200px;
+        }
+    }
+    .promo{
+        &__header{
+            font-size: 36px;
+        }
+        &__subheader{
+            font-size: 20px;
+        }
+        &__icons{
+            width: 350px
+        }
+    }
+    .advantages{
+        &__wrapper{
+            margin-top: 0;
+            flex-direction: column;
+            align-items:center;
+        }
+        &__item{
+            max-width: 240px;
+            margin-top: 30px;
+        }
+    }
+
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .header{
+        &__logo{
+            width: 160px;
+        }
+        &__official{
+            display: none;
+        }
+        &__phone{
+            font-size: 13px;
+        }
+    }
+    .button{
+        width: 120px;
+        height: 22px;
+        font-size: 11px;
+        &_main{
+            width: 200px;
+            height: 32px;
+        }
+    }
+    .title{
+        font-size: 24px;
+    }
+    .promo{
+        min-height: 500px;
+       padding: 35px 0;
+        &__wrapper{
+            align-items: center;
+        }
+        &__header{
+            font-size: 24px;
+            text-align: center;
+        }
+        &__subheader{
+            font-size: 15px;
+            text-align: center;
+        }
+        &__icons{
+            width: 100%;
+        }
+        &__icon{
+            font-size: 12px;
+            img{
+                height: 40px;
+            }
+        }
+        &__link{
+            font-size: 14px;
+        }
+    }
+    .advantages{
+        padding: 60px 0;
+        &__item{
+            margin-top: 20px;
+        }
+    }
+}
