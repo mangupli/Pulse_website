@@ -16,6 +16,13 @@
             max-width: 220px;
         }
     }
+    .carousel{
+        .slick-prev, .slick-next{
+            img{
+                display: none;
+            }
+        }
+    }
 }
 
 @media (max-width: 768px) {
