@@ -62,11 +62,22 @@
         }
     }
     .carousel{
+        &__wrapper{
+            width: 65%;
+            img{
+                width:100%;
+            }
+        }
         .slick-prev, .slick-next{
             img{
                 display: none;
             }
         }
+    }
+    .modal-win{
+        width: 350px;
+        min-height: 320px;
+        padding: 35px 23px 40px;
     }
 }
 
@@ -77,14 +88,7 @@
     .title_left{
         font-size: 30px;
     }
-    .carousel{
-        &__wrapper{
-            width: 90%;
-            img{
-                width:100%;
-            }
-        }
-    }
+
     .header{
         &__phone{
             font-size: 15px;
@@ -321,6 +325,29 @@
         }
         &__phone{
             font-size: 15px;
+        }
+    }
+
+    .modal-win{
+        width: 260px;
+        min-height: 320px;
+        padding: 35px 10px 40px;
+        &__close{
+            right: 5px;
+            top: 5px;
+        }
+        &__subtitle{
+            font-size: 15px;
+        }
+        &__descr{
+            font-size: 11px;
+        }
+    }
+
+    .feed-form{
+        width: 240px;
+        input{
+            height: 42px;
         }
     }
 }
