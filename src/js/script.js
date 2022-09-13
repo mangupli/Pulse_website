@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
     $('.carousel__wrapper').slick({
         speed: 800,
@@ -67,14 +66,60 @@ $(document).ready(function(){
         });
      }); 
 
+    
 
-/*   $('.button_mini').each(function(i) {
-      $(this).on('click', function() {
-          $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
-          $('.overlay, #order').fadeIn('slow');
-      })
-  }); */
+     function validateForms(className){
+      $(className).validate({
+        rules: {
+          name: {
+            required: true,
+            minlength: 2
+          },
+          phone:{
+            required: true,
+            minlength: 9,
+            maxlength: 11
+          },
+          email: {
+            required: true,
+            email: true
+          }
+        },
+        messages: {
+          name: {
+            required: "Введите своё имя",
+            minlength: "Разве бывает имя из одной буквы?"
+          },
+          phone:{
+            required: "Введите свой номер телефона",
+            minlength: "Минимальное кол-во цифр: 9",
+            maxlength: "Максимальное кол-во цифр: 11"
+          },
+          email: {
+            required: "Введите свою электронную почту",
+            email: "Введите свою электронную почту"
+          }
+        }
+      });
+     }
 
+     validateForms('#order form');
+     validateForms('#main-page-form');
+     validateForms('#consultation form');
+
+     $("input[name=phone]").mask("+7 (999) 999-99-99");
+
+     //smooth scroll + page up home
+     $(window).on('scroll', function(){
+        if($(this).scrollTop() > 1300){
+          $('.arrowUp').fadeIn();
+        }
+        else{
+          $('.arrowUp').fadeOut();
+        }
+     });
+
+     new WOW().init();
 
 });
           

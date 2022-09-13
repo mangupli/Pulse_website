@@ -43,6 +43,12 @@
     }
     &__feed-form{
         margin-top: 26px;
+        .error{
+            border: 1px solid $red-color;
+        }
+        label.error{
+            border: none;
+        }
     }
     &_size_s{
         min-height: 143px;
@@ -53,3 +59,4 @@
 #consultation, #order, #approveOrder{
     display: none;
 }
+

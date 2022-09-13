@@ -8,9 +8,12 @@
     }
     &__item{
         max-width: 240px;
-        img{
-            display: block;
-            margin: 0 auto;
+    }
+    &__icon{
+        display: block;
+        margin: 0 auto;
+        &_animated{
+            animation: heartBeat 2s ease infinite;
         }
     }
     &__subtitle{
